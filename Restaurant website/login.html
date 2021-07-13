@@ -1,0 +1,129 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>LogIN | DIPAK BHATT</title>
+        
+    </head>
+    <body>
+
+        <!-- LOGO -->
+        <div class="beforenav">
+             <a href="index.html"><img class="logo" src="./images/logo.png" alt="Hotel Logo"></a>
+              <p class="contact_details"><b>Contact Details: <br /> +91 87330 48278 <br /> bhattdipak980@gmail.com</b></p>
+        </div>
+
+        <!-- NAVIGATION BAR -->
+        <div class="topnav" id="myTopnav">
+        <a href="index.html"><b>HOME</b></a>
+        <a href="accomodation.html"><b>ACCOMODTION</b></a>
+        <a href="gallary.html"><b>GALLARY</b></a>
+        <a href="contact.html"><b>CONTACTS</b></a>
+        <div class="nav-right">
+        <a href="login.html" class="active"><b>LOGIN</b></a>
+        <a href="register.html"><b>REGISTER</b></a></div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        </div>
+
+        <!-- LOGIN DETAILS -->
+        <div class="backlogin">
+        <div class="login">
+  <div class="login-header">
+    <h1>Login</h1>
+  </div>
+  <div class="login-form">
+    <h3>Username:</h3>
+    <input type="text" placeholder="Username"/><br>
+    <h3>Password:</h3>
+    <input type="password" placeholder="Password"/>
+    <br>
+    <input type="button" value="Login" class="login-button"/>
+    <br>
+    <a class="sign-up">Sign Up!</a>
+    <br>
+    <h6 class="no-access">Can't access your account?</h6>
+  </div>
+</div>
+</div>
+
+        <!-- Footer -->
+        <footer class="footer-distributed">
+			<div class="footer-left">
+         <a href="index.html"><img class="logo" src="./images/logo.png" alt="Hotel Logo"></a>
+				<h3>Dipak<span>Bhatt</span></h3>
+                <p class="footer-links">
+					<a href="#">Home</a>
+					|
+					<a href="#">Blog</a>
+					|
+					<a href="#">About</a>
+					|
+					<a href="#">Contact</a>
+				</p>
+
+				<p class="footer-company-name">© 2021 Bhatt Learning Solutions Pvt. Ltd.</p>
+			</div>
+
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-map-marker"></i>
+					  <p><span>A-2 - Kalpatrupark Society,
+						 Bldg. No. A - 2, Sector - 1</span>
+						Zundal, Ahemdabad - 387530</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+91 87330 48278</p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="bhattdipak980@gmail.com">bhattdipak980@gmail.com</a></p>
+				</div>
+			</div>
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>About the company</span>
+					We offer the best services across the world, food, Management, peace and Humanities.</p>
+				<div class="footer-icons">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-youtube"></i></a>
+				</div>
+			</div>
+		</footer>
+
+
+<script>
+    $('.error-page').hide(0);
+
+    $('.login-button , .no-access').click(function () {
+        $('.login').slideUp(500);
+        $('.error-page').slideDown(1000);
+    });
+
+    $('.try-again').click(function () {
+        $('.error-page').hide(0);
+        $('.login').slideDown(1000);
+    });
+
+  
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+
+</script>
+    </body>
+    </html>
